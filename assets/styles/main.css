@@ -1,0 +1,315 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #4caf4f;
+  --text-color: #717171;
+  --title-color: #4d4d4d;
+  --black: #000000;
+  --white: #ffffff;
+  --bg-alt: #f5f7fa;
+  --bg: #263238;
+  --h1-size: 40px;
+  --h2-size: 36px;
+  --section-padding: 40px;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+a{
+  text-decoration: none;
+}
+header nav input{
+  appearance: none;
+}
+@media (max-width:991px){
+  header nav{
+    position: relative;
+  }
+    header nav input:checked + ul{
+      display: block;
+    }
+    header nav ul{
+      display: none;
+      position: absolute;
+      top:50px;
+      right: 0;
+      min-width: 250px;
+      border: 1px solid rgb(0 0 0 /0.1);
+      background-color: #fff;
+    }
+    header nav ul li:not(:last-child){
+      border-bottom: 1px solid rgb(0 0 0 /0.1);
+    }
+    header nav ul li a{
+      display: block;
+      padding: 10px;
+      color: var(--black);
+    }
+    .option-list{
+      gap: 100px;
+    }
+    }
+  @media (min-width:992px){
+    header nav label,
+    header nav .checkbox{
+  display: none;
+    }
+    header nav ul{
+      display: flex;
+    }
+    header nav ul li{
+      padding: 0 20px;
+    }
+    .col {
+      width: 45%;
+    }
+    .login {
+      padding-left: 50px;
+      font-weight: bold;
+    }
+  }
+  .menu{
+    color:var(--black);
+    font-size: 30px;
+    cursor: pointer;
+  }
+  nav ul li{
+    list-style: none;
+  }
+  header{
+    width:100%;
+    top: 5px;
+    padding: 20px 0;
+    z-index: 1;
+    background-color: var(--bg-alt);
+  }
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 100%;
+  }
+  ul {
+    list-style: none;
+  }
+  .section-title {
+    font-size: 36px;
+    color: var(--title-color);
+  }
+  .section-description {
+    margin: 20px 0;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .special-text {
+    color: var(--main-color);
+  }
+  .section-btn {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 4px;
+  }
+  .link{
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--main-color);
+    display: flex;
+    gap: 2px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .section {
+    padding: var(--section-padding) 0;
+  }
+  header .container{
+    justify-content:space-between;
+    flex-wrap: nowrap;
+  }
+  .logo a{
+    display: flex;
+    color: var(--black);
+    font-size: 22px;
+    gap: 10px;
+    font-weight: bold;
+  }
+  header a{
+    color: var(--black);
+  }
+  .Signup{
+    padding: 5px;
+  }
+ .info h1{
+  font-size: 40px;
+  color: var(--title-color);
+ }
+ .hero,.aihisayiyaats,.about,.option .info,.get-demo{
+  background-color: var(--bg-alt);
+ }
+ .hero .container{
+  gap: 100px;
+ }
+ .clients.container{
+  flex-direction: column; 
+ }
+ .clients-list,.card-list {
+  padding-top: 40px;
+  gap:100px;
+}
+.card{
+  box-shadow: 2px 2px 10px rgb(0 0 0 /0.1);
+  border-radius: 20px; padding: 20px;
+}
+.card-list .card h3{
+  font-weight: bold;
+  color: var(--title-color);
+  font-size: 24px;
+}
+.clients-list{
+  justify-content: space-around;  
+}
+.card img{
+  display: flex; justify-content: center; align-items: center; margin: auto;
+  padding-bottom: 20px; 
+}
+.aihisayiyaat div span{
+display: block;
+margin-bottom: 10px;
+}
+.aihisayiyaat{
+  gap: 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.aihisayiyaat-list{
+ gap:0px;
+ justify-content: space-between;
+ width:400px; 
+}
+.aihisayiyaats .container{
+align-items: flex-start;
+padding: 40px;
+justify-content: space-evenly;
+}
+.aihisayiyaat img{
+  width: 40px;
+}
+.aihisayiyaats .aihisayiyaat-list .aihisayiyaat span:first-child {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--title-color);
+}
+.about.container{
+  justify-content: space-evenly;
+}
+.about .clients-list{
+  gap:5px;
+  position: relative; bottom: 5vh;
+}
+.about span{
+  color: var(--main-color); font-weight: bold; font-size: 19px;
+}
+.option img{
+  border-radius: 20px;
+}
+.option{
+  position: relative;
+}
+.option .info{
+  position: absolute;
+  left: calc(50% - 120px);
+  bottom: -70px;
+  width: 240px;
+  padding: 20px;
+  background-color: var(--bg-alt);
+  box-shadow: 2px 2px 10px rgb(0 0 0 /0.1);
+  border-radius: 20px;
+}
+.option .info p{
+  color: var(--title-color);
+  font-weight: bold; font-size: 16px;
+}
+.get-demo{
+margin-top: 120px;
+padding: 20px;
+}
+.content a{
+  display: flex; align-items: center; justify-content: center; margin: auto;
+  margin-top: 40px; width: 150px; gap: 10px;
+}
+.content h2{
+  font-size: 45px; 
+}
+.footer{
+  background-color: var(--bg);
+  padding: 40px;
+}
+.logo-footer a{
+  color: #fff;
+  font-size: 22px; display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+.logo-description p{
+color: #fff;
+margin-top: 40px; line-height: 1.5;
+}
+.icons img{
+background-color: var(--title-color);
+padding: 5px; border-radius: 20px;
+ margin: 40px 5px;
+}
+.links a{
+  display: block;
+  color: #fff; line-height: 1.5;
+  margin-top: 10px;
+}
+.links h3{
+  color: #fff; font-weight: bold; font-size: 22px;
+}
+.links{
+  display: flex; align-items: start; justify-content: space-between;gap: 70px; flex-wrap: wrap;
+}
+.footer .container{
+  justify-content: space-around; gap: 40px; align-items: flex-start;
+}
+.login-input{
+  background-color: #888;
+margin-top: 20px;
+padding: 10px; border-radius: 10px;
+}
+.login-input input{
+  border: none; outline: none;
+  background-color: #888;
+}
+.option-list{
+  display: flex; align-items: center;
+  justify-content: space-between; flex-wrap: wrap; 
+}
